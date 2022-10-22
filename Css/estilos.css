@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.nombrePagina {
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.pregunta {
+  font-size: 50px;
+  text-decoration: underline;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.listaPc {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 30px;
+
+}
+
+.boton_formulario {
+  color: #101316;
+  position: relative;
+  font-size: 1.5rem;
+  width: 100px;
+  height: 50px;
+  top: 20px;
+  margin: 10px;
+}
+
+.formDesc{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.formTexto{
+  height: 50px;
+}
