@@ -33,10 +33,11 @@ main {
   font-size: 40px;
   font-weight: 600;
   margin: 30px;
+  text-decoration: none;
 
 }
 
-.boton_formulario {
+.boton {
   color: #101316;
   position: relative;
   font-size: 1.5rem;
@@ -46,11 +47,27 @@ main {
   margin: 10px;
 }
 
-.formDesc{
-  font-size: 30px;
-  font-weight: 600;
+.valor{
+  height: 50px;
+  width: 400px;
 }
 
-.formTexto{
-  height: 50px;
+.divInput{
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.tarjetaPc{
+  display: flex;
+  margin: 20px;
+  background-color: aqua;
+  min-height: 300px;
+  min-width: 500px;
+}
+
+.img{
+  max-width: 300px;
+  max-height: 300px;
 }
