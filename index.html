@@ -25,7 +25,17 @@
 
 <body>
     <main>
-        <h1 class="nombrePagina container">Armador de Pc:</h1>
+        <h1 class="nombrePagina container">Tienda de Pc:</h1>
+        <div class="divForm">
+            <form class="formLogin">
+                Nombre:<br>
+                <input id="nombreUs" type="text" name="firstname"><br>
+                Correo:<br>
+                <input id="emailUs" type="text" name="email"><br><br>
+                <input id="subInfo" type="submit" value="Enviar">
+                <input type="reset">
+            </form>
+        </div><br>
         <div class="container col-12 d-flex">
             <p class="pregunta container col-8 d-flex">Que tipo de pc estas buscando?</p>
             <ul class="listaPc container col-4">
@@ -37,10 +47,10 @@
         </div>
         <div class="container divInput">
             <input id="input" class="valor" type="text" placeholder="EJ: Gamer/1"><br>
-            <button onclick="buscar()"  class="boton">Buscar</button>
+            <button onclick="buscar()" class="boton">Buscar</button>
         </div>
-        <div id="caja1" class="container col-10 tarjetaPc">
-            
+        <div id="caja1" class="container d-flex tarjetaPc">
+
         </div>
 
     </main>

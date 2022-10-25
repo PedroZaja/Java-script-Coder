@@ -60,14 +60,35 @@ main {
 }
 
 .tarjetaPc{
-  display: flex;
+  display: column;
   margin: 20px;
-  background-color: aqua;
   min-height: 300px;
   min-width: 500px;
+  justify-content: space-between;
 }
 
 .img{
   max-width: 300px;
   max-height: 300px;
+}
+
+.noResultado{
+  font-size: 40px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.precio{
+  font-weight: 600;
+  font-size: 30px;
+}
+
+
+.divForm{
+  position:absolute;
+  top: 40px;
+  left: 1600px;
+  margin: 40px;
+  top: 50px;
+  
 }
