@@ -32,25 +32,28 @@
                 <input id="nombreUs" type="text" name="firstname"><br>
                 Correo:<br>
                 <input id="emailUs" type="text" name="email"><br><br>
-                <input id="subInfo" type="submit" value="Enviar">
+                <input id="subInfo" type="button" onclick="PopUpLogIn()" value="Enviar">
                 <input type="reset">
             </form>
         </div><br>
         <div class="container col-12 d-flex">
             <p class="pregunta container col-8 d-flex">Que tipo de pc estas buscando?</p>
             <ul class="listaPc container col-4">
-                <li class="Lista"><a id="PcGamer" href="">(1) Gamer?</a></li>
-                <li class="Lista"><a id="PcEdicion" href="">(2) Edicion?</a></li>
-                <li class="Lista"><a id="PcStreaming" href="">(3) Streaming?</a></li>
+                <li class="Lista"><button id="PcGamer" onclick="PopUpGamer()" href="">(1) Gamer?</button></li>
+                <li class="Lista"><button id="PcEdicion" onclick="PopUpEdicion()" href="">(2) Edicion?</button></li>
+                <li class="Lista"><button id="PcStreaming" onclick="PopUpStreaming()" href="">(3) Streaming?</button>
+                </li>
 
             </ul>
         </div>
         <div class="container divInput">
             <input id="input" class="valor" type="text" placeholder="EJ: Gamer/1"><br>
-            <button onclick="buscar()" class="boton">Buscar</button>
+            <button id="btnBuscar" onclick="buscar()" class="boton">Buscar</button>
         </div>
-        <div id="caja1" class="container d-flex tarjetaPc">
-
+        <div id="caja1" class="card-container">
+            
+          
+          
         </div>
 
     </main>
@@ -63,3 +66,4 @@
 </body>
 
 </html>
+

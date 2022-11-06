@@ -1,0 +1,20 @@
+[
+    {
+       "pc":"1",
+       "precio":"$50000",
+       "caracteristicas":"i5, 16gb de ram, rx 580, 600w, 240 ssd",
+       "img":"img src= img/pcStreaming1.jpg"
+    },
+    {
+       "pc":"2",
+       "precio":"$100000",
+       "caracteristicas":"i7, 16gb de ram, rtx 3060, 650w, 1tb hdd, 240gb ssd",
+       "img":"img src= img/pcStreaming2.jpg"
+    },
+    {
+       "pc":"3",
+       "precio":"$200000",
+       "caracteristicas":"i9, 32gb de ram, rtx 3080ti, 850w, 1tb ssd",
+       "img":"img src= img/pcStreaming3.jpg"
+    }
+ ]

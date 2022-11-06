@@ -1,3 +1,7 @@
+const cardContainer = document.querySelector("#caja1"),
+btnBuscar = document.querySelector("#btnBuscar"),
+inputBuscar = document.querySelector("#input");
+
 function Pc(pc, precio, caracteristicas, img) {
     this.pc = pc;
     this.precio = precio;
@@ -5,114 +9,8 @@ function Pc(pc, precio, caracteristicas, img) {
     this.img = img;
 }
 
-let PcGamer1 = {
-    pc: "1",
-    precio: "$50000",
-    caracteristicas: "i3, 16gb de ram, rx 550, 500w, 240 ssd",
-    img: "img src= img/pc1.jpg",
-}
-let PcGamer2 = {
-    pc: "2",
-    precio: "$100000",
-    caracteristicas: "i5, 16gb de ram, rtx 3050, 650w, 1tb hdd, 240gb ssd",
-    img: "img src= img/pc2.jpg",
-}
-let PcGamer3 = {
-    pc: "3",
-    precio: "$200000",
-    caracteristicas: "i7, 16gb de ram, rx 6650, 850w, 1tb ssd",
-    img: "img src= img/pc3.jpg",
-}
-
-
-let PcEdicion1 =
-{
-    pc: "1",
-    precio: "$50000",
-    caracteristicas: "i3, 16gb de ram, rx 550, 500w, 240 ssd",
-    img: "img src= img/pc1.jpg",
-}
-let PcEdicion2 = {
-    pc: "2",
-    precio: "$100000",
-    caracteristicas: "i5, 16gb de ram, rtx 3050, 650w, 1tb hdd, 240gb ssd",
-    img: "img src= img/pc2.jpg",
-}
-let PcEdicion3 = {
-    pc: "3",
-    precio: "$200000",
-    caracteristicas: "i7, 16gb de ram, rx 6650, 850w, 1tb ssd",
-    img: "img src= img/pc3.jpg",
-}
-
-
-let PcStreaming1 =
-{
-    pc: "1",
-    precio: "$50000",
-    caracteristicas: "i3, 16gb de ram, rx 550, 500w, 240 ssd",
-    img: "img src= img/pc1.jpg",
-}
-let PcStreaming2 = {
-    pc: "2",
-    precio: "$100000",
-    caracteristicas: "i5, 16gb de ram, rtx 3050, 650w, 1tb hdd, 240gb ssd",
-    img: "img src= img/pc2.jpg",
-}
-let PcStreaming3 = {
-    pc: "3",
-    precio: "$200000",
-    caracteristicas: "i7, 16gb de ram, rx 6650, 850w, 1tb ssd",
-    img: "img src= img/pc3.jpg",
-}
-
-
-
-function buscar() {
-    if (document.getElementById("input").value === "gamer", "Gamer", "1") {
-        document.getElementById("caja1").innerHTML = `
-        <${PcGamer1.img} alt="" class="img">
-        <h2 class="precio">${PcGamer1.precio}</h2>
-        <${PcGamer2.img} alt="" class="img">
-        <h2 class="precio">${PcGamer2.precio}</h2>
-        <${PcGamer3.img} alt="" class="img">
-        <h2 class="precio">${PcGamer3.precio}</h2>
-        `;
-    }
-    else if (document.getElementById("input").value === "Edicion", "edicion", "2") {
-        document.getElementById("caja1").innerHTML = `
-        <${PcEdicion1.img} alt="" class="img">
-        <h2 class="precio">${PcEdicion1.precio}</h2>
-        <${PcEdicion2.img} alt="" class="img">
-        <h2 class="precio">${PcEdicion2.precio}</h2>
-        <${PcEdicion3.img} alt = "" class="img">
-        <h2 class="precio">${PcEdicion3.precio}</h2>
-        `;
-
-    }
-    else if (document.getElementById("input").value === "streaming", "Streaming", "stream", "3") {
-        document.getElementById("caja1").innerHTML = `
-        <${PcStreaming1.img} alt="" class="img">
-        <h2 class="precio">${PcStreaming1.precio}</h2>
-        <${PcStreaming2.img} alt="" class="img">
-        <h2 class="precio">${PcStreaming2.precio}</h2>
-        <${PcStreaming3.img} alt = "" class="img">
-        <h2 class="precio">${PcStreaming3.precio}</h2>
-        `;
-
-    }
-    else if (document.getElementById("input").value !== "gamer", "Gamer", "1", "Edicion", "edicion", "2", "streaming", "Streaming", "stream", "3") {
-        document.getElementById("caja1").innerHTML =
-            `<p class="noResultado">No se encontro ningun resultado en su busqueda</p>`
-    } 
-    else if (document.getElementById("input").value === "") {
-        `<p class="noResultado">No se encontro ningun resultado en su busqueda</p>`
-    }
-}
-
 const opcion = document.getElementById("input");
 const contenedor = document.getElementById("caja1");
-
 
 document.querySelector("#subInfo").addEventListener("click", guardarUs);
 
@@ -125,13 +23,96 @@ function guardarUs() {
 
 }
 
-function popUp() {
-    if (document.getElementById("nombreUs").value !== " ") {
-        swal({
-            title: "Resgistro completo!",
-            icon: "success",
-          });
-    }
+function PopUpGamer() {
+
+    swal({
+        title: "Una Pc Gamer esta enfocada al mundo de los videojuegos, multimedia y una estetica mas vistosa, ya sea con luces o componentes visibles.",
+        icon: "success",
+    });
+
+}
+
+function PopUpEdicion() {
+    swal({
+        title: "Una Pc para edicion es aquella enfocada al mundo profesional, ya sea para editar/renderizar videos o fotos.",
+        icon: "success",
+    });
+}
+
+function PopUpStreaming() {
+    swal({
+        title: "Las Pc de streaming son aquellas enfocadas al mundo de la creacion de contenido, ya sea para subir transmisiones en el momento o grabar tus gameplays para las distintas plataformas.",
+        icon: "success",
+    });
+
+}
+
+function buscar() {
+    swal("Buscando! :)", {
+        buttons: false,
+        timer: 2000,
+    });
+}
+
+function PopUpLogIn() {
+    swal({
+        title: "Registrado con Exito!",
+        icon: "success",
+    });
+}
+
+const URLgamer = './Pc/pcGamer.json';
+const fetchGamer = async (URLgamer) => {
+    const respuestaGamer = await fetch(URLgamer);
+    const pcGamer = await respuestaGamer.json();
+}
+
+const URLstreaming = './Pc/pcStreaming.json';
+const fetchStreaming = async (URLstreaming) => {
+    const respuestaStreaming = await fetch(URLstreaming);
+    const pcStreaming = await respuestaStreaming.json();
+
+}
+
+const URLedicion = './Pc/pcEdicion.json';
+const fetchEdicion = async () => {
+    const respuestaEdicion = await fetch(URLedicion);
+    const pcEdicion = await respuestaEdicion.json();
+
 }
 
 
+function buscarPc(){
+    if(document.getElementById("input").value == "1"){
+        document.getElementById("caja1").innerHTML = `
+        <div class="card">
+      <img src="${img}" alt="">
+      <div class="card-body">
+          <h3>${precio}</h3>
+          <p>${caracteristicas}</p>
+      </div>
+  </div>
+        `
+    }
+}
+
+const mostrarPc = (arr) => {
+    let html;
+    for (const item of arr) {
+      const { precio, img, caracteristicas } = item;
+  
+      html = `
+        <div class="card">
+            <div class="card-image">
+             <img src="../img/${img}">
+            </div>
+          <div class="card-content">
+            <span class="card-title">${precio}</span>
+            <p>$${caracteristicas}</p>
+          </div>
+        </div>
+       `;
+  
+      contenedor.innerHTML += html;
+    }
+  };

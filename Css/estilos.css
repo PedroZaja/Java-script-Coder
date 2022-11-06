@@ -85,10 +85,9 @@ main {
 
 
 .divForm{
-  position:absolute;
-  top: 40px;
-  left: 1600px;
+  position:static;
+  float: right;
+  text-align: right;
   margin: 40px;
-  top: 50px;
   
 }
