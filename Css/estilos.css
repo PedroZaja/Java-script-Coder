@@ -70,6 +70,8 @@ main {
 .img{
   max-width: 300px;
   max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 .noResultado{
@@ -83,6 +85,10 @@ main {
   font-size: 30px;
 }
 
+.caracteristicas{
+  font-size: 20px;
+  font-weight: 600;
+}
 
 .divForm{
   position:static;

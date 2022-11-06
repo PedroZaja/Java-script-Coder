@@ -3,18 +3,18 @@
        "pc":"1",
        "precio":"$100000",
        "caracteristicas":"i5, 16gb de ram, rx 580, 600w, 480 ssd",
-       "img":"img src= img/pcEdicion1.jpg"
+       "img":"pcEdicion1.png"
     },
     {
        "pc":"2",
        "precio":"$150000",
        "caracteristicas":"i7, 32gb de ram, rtx 3070, 750w, 1tb hdd, 480gb ssd",
-       "img":"img src= img/pcEdicion2.jpg"
+       "img":"pcEdicion2.png"
     },
     {
        "pc":"3",
        "precio":"$250000",
        "caracteristicas":"i9, 64gb de ram, rtx 3080, 850w, 1tb ssd",
-       "img":"img src= img/pcEdicion3.jpg"
+       "img":"pcEdicion3.png"
     }
  ]
